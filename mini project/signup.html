@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-Page</title>
+    <style>
+        body{
+            background-color:
+            #00416a;
+        }
+        #box{
+            width: 30%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: 500px;
+            margin: auto;
+            background-color:#c471ed;
+            margin-top: 80px;
+            text-align: center;
+        }
+        #box>h1{
+            padding-top: 40px;
+            color: #C6FFDD;
+            padding-bottom: 20px;
+        }
+       #fst,#sec,#thrd{
+            width: 70%;
+            height: 40px;
+            border: none;
+            margin-bottom: 20px;
+            border-color: transparent;
+            border-radius: 5px;
+        }
+        button{
+            width: 70%;
+            height: 60px;
+            border: none;
+            margin-bottom: 20px;
+            color: white;
+            background-color: rgb(23,165,137);
+            border-radius: 5px;
+            background-color: #ff7200;
+        }
+        button:hover{
+            background-color: #FFFFFF;
+            color: black;
+            font-size: 20px;
+            font-style: italic;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1><I>--SIGN UP--</I></h1>
+        <input id="fst"  type="text" placeholder="Full Name" required="required">
+        <input id="sec"  type="text" placeholder="Email" required="required">
+        <input id="thrd" type="text" placeholder="Organisation" required="required">
+        <br>
+        <button id="sign" >SIGN UP</button>
+        <br>
+        <button id="back">RETURN</button>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#sign").addEventListener("click",myfun)
+    document.querySelector("#back").addEventListener("click",backfun)
+    function myfun(){
+        alert("Signup successful😊")
+    }
+    function backfun(){
+        alert("Return to homepage🤷")
+    }
+</script>
